@@ -4,6 +4,8 @@
 // see https://docs.qmk.fm/#/keycodes
 //     https://docs.qmk.fm/#/faq_keymap
 
+#define MT_LALT MT(MOD_LALT, KC_ENTER)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	KEYMAP(
@@ -11,7 +13,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TAB,  KC_W,    KC_R,    KC_Y,   KC_I,    KC_P,    KC_BSPC,
 		KC_CAPS, KC_S,    KC_F,    KC_H,   KC_K,    KC_SCLN, KC_NUHS,
 		KC_LSFT, KC_X,    KC_V,    KC_N,   KC_COMM, KC_SLSH, KC_RSFT,
-		KC_LCTL, KC_NUBS, KC_LALT, KC_SPC, KC_RALT, KC_LCTL, MO(2),
+		KC_LCTL, KC_NUBS, MT_LALT, KC_SPC, KC_RALT, KC_LCTL, MO(2),
 
 		     KC_1,    KC_3,    KC_5,    KC_7,   KC_9,    KC_MINS, KC_RBRC,
 		     KC_Q,    KC_E,    KC_T,    KC_U,   KC_O,    KC_LBRC,
